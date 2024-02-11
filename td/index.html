@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Your 3D Game Title</title>
+  <meta name="description" content="Your 3D Game Description">
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <!--
+The idea is to combine a tower defense style game with a generic algorithm for creating monsters.
+This would be a rogue-lite thing where there would be some fun variation on each playthrough
+maybe even upgrades might work along the same genetic lines. Instead of a fixed technology tree you would have researchers who iterate on the spell or behavior rather than unlocking a known next step
+  -->
+</head>
+<body>
+  <a-scene>
+    <!-- Camera -->
+    <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+
+    <!-- Light -->
+    <a-light type="ambient" color="#888"></a-light>
+    <a-light type="directional" color="#fff" intensity="0.8" position="-3 6 -3"></a-light>
+
+    <!-- Ground -->
+    <a-plane rotation="-90 0 0" width="100" height="100" color="#666"></a-plane>
+
+    <!-- Example: Cube -->
+    <a-box position="0 1.25 -5" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+
+    <!-- Your custom entities go here -->
+
+  </a-scene>
+</body>
+</html>
